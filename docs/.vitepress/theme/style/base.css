@@ -34,5 +34,5 @@
 /*-webkit-scrollbar-track-piece > -webkit-scrollbar-track > -webkit-scrollbar*/
 
 ::selection {
-  background: var(--vp-c-green-dimm-2);
+  background: var(--vp-c-brand-soft);
 }

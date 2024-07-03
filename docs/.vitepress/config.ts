@@ -5,7 +5,7 @@ import { renderSandbox } from 'vitepress-plugin-sandpack'
 import { BASE_URL, withBase } from './config/common'
 import { nav, sidebar } from './config/menu'
 import { pwa } from './config/pwa'
-import { algolia } from './config/search'
+import { algolia, local } from './config/search'
 import { vite } from './config/vite'
 import './helper/restart-trigger'
 
@@ -37,6 +37,9 @@ export default withPwa(defineConfig({
           },
         })
     },
+    image: {
+      lazyLoading: true
+    }
   },
   themeConfig: {
     logo: '/logo.svg',
