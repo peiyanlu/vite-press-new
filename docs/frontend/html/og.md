@@ -1,20 +1,24 @@
 ---
 title: OG 协议
 description: 实现分享的链接可以预览图片、标题、描述
-category: uncategorized
+category: html
 tags:
-  - uncategorized
+  - html
   - url
   - OG
 ---
 
+
 # {{ $frontmatter.title }}
+
 
 `Open Graph Protocol`（[开放图谱协议](https://ogp.me/)），简称 `OG` 协议。它是 `Facebook`
 公布的一种网页元信息（`Meta Information`）标记协议，属于 `Meta Tag`
 （`Meta` 标签）的范畴，是一种为社交分享而生的 `Meta` 标签，用于标准化网页中元数据的使用，使得社交媒体得以以丰富的“图形”对象来表示共享的页面内容
 
+
 ## 基本元数据
+
 
 如果要将网页转换为图形对象，需要向网页的 `＜head＞` 中放置额外的基本元数据（`＜meta＞` 标签）。每个页面所需的四个属性是：
 
@@ -27,6 +31,7 @@ tags:
 - `og:url`：对象的规范 `URL`，将在图中用作其永久 `ID`，例如 `https://www.imdb.com/title/tt0117500/`.
 
 ```html
+
 <meta property="og:title" content="The Rock" />
 <meta property="og:type" content="video.movie" />
 <meta property="og:url" content="https://www.imdb.com/title/tt0117500/" />
@@ -51,6 +56,7 @@ tags:
 - `og:video`：此对象附带的视频文件的 `URL`。
 
 ```html
+
 <meta property="og:audio" content="https://example.com/bond/theme.mp3" />
 <meta property="og:description" content="description." />
 <meta property="og:determiner" content="the" />

@@ -89,7 +89,7 @@ export default withPwa(defineConfig({
       lang: 'zh-CN',
     },
   },
-  vite: vite as any,
+  vite: vite,
   pwa: pwa,
 }))
 
