@@ -39,9 +39,7 @@
     "vitepress": "^1.2.3",
     "vitepress-plugin-helper": "0.0.6",
     "vitepress-plugin-sandpack": "^1.1.4",
-    "vue": "^3.4.29",
-    "@types/crawler": "^1.2.2",
-    "crawler": "^1.4.0"
+    "vue": "^3.4.29"
   },
   "pnpm": {
     "overrides": {

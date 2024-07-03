@@ -3,7 +3,7 @@ import Live2dWidget from '@theme/components/Live2dWidget.vue'
 import SlotDocAfter from '@theme/components/SlotDocAfter.vue'
 import SlotDocFooterBefore from '@theme/components/SlotDocFooterBefore.vue'
 // 依赖
-import { ImagePreviewService } from '@theme/directives/image-preview'
+import { ImagePreviewService } from './directives/image-preview'
 import { useEventListener } from '@vueuse/core'
 import 'virtual:svg-icons-names'
 import 'virtual:svg-icons-register'
