@@ -40,6 +40,7 @@ const ns = useNamespace('site-nav-link')
   color: var(--vp-c-text-1);
   border: 1px solid var(--vp-c-bg-soft);
   border-radius: 8px;
+  text-decoration: none;
   
   &:hover {
     text-decoration: unset;

@@ -2,6 +2,7 @@ import path from 'path'
 import { visualizer } from 'rollup-plugin-visualizer'
 import { fileURLToPath } from 'url'
 import { UserConfig } from 'vite'
+import commonjs from 'vite-plugin-commonjs'
 import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
 
 
@@ -17,6 +18,7 @@ export const vite: UserConfig = {
     ],
   },
   plugins: [
+    commonjs(),
     createSvgIconsPlugin({
       // 指定需要缓存的图标文件夹
       iconDirs: [ path.resolve(process.cwd(), 'docs/public/icons') ],
@@ -31,6 +33,9 @@ export const vite: UserConfig = {
   ],
   build: {
     chunkSizeWarningLimit: 1000,
+    commonjsOptions: {
+      transformMixedEsModules: true,
+    },
   },
   define: {
     PWA: true,
