@@ -122,7 +122,7 @@ const ns = useNamespace('doc-timeline-item')
               class="subgroup-content"
             >
               <div class="title">
-                <a :href="withBase(doc.path)">{{ doc.category ? `${ doc.category } / ` : '' }}{{ doc.title }}</a>
+                <a :href="withBase('/' + doc.path)" target="_blank">{{ doc.title }}</a>
                 <div v-if="doc.description">-- {{ doc.description }}</div>
               </div>
               <DocMetaData :doc="doc" @get-selected="handleSelectedTag" />

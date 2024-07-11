@@ -27,7 +27,7 @@ watchEffect(() => {
         models: isDark.value ? [ 'hijiki' ] : [ 'tororo' ],
       },
       cubismCorePath: withBase('/live2d/core/live2dCubismCore.min.js'),
-      debug: true,
+      debug: false,
     })
   } else {
     Live2dWidget.release()

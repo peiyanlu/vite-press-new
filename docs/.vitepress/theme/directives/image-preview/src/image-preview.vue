@@ -200,9 +200,8 @@ onUnmounted(() => {
   //@mixin fixed-button() {}
   //@include fixed-button();
   
-  --toolbar-height: 42px;
-  
   &__toolbar {
+    --toolbar-height: 42px;
     position: fixed;
     z-index: 2;
     top: 0;
@@ -398,9 +397,9 @@ onUnmounted(() => {
 
 @media (max-width: 750px) {
   .VPDoc-image-preview {
-    --toolbar-height: 36px;
     
     &__toolbar {
+      --toolbar-height: 36px;
       padding: 0 4px;
       border-radius: 4px;
       gap: 4px;

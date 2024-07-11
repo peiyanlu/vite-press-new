@@ -1,9 +1,9 @@
 ---
 title: 问题记录
 description: npm遇到的各种牛鬼蛇神
-category: npm
+category: webpack
 tags:
-  - npm
+  - webpack
   - FAQ
 order: 999
 ---
