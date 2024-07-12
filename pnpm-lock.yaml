@@ -51,6 +51,9 @@ importers:
       gray-matter:
         specifier: ^4.0.3
         version: 4.0.3
+      live2d-lib:
+        specifier: ^1.0.9
+        version: 1.0.9
       markdown-it-container:
         specifier: ^4.0.0
         version: 4.0.0
@@ -2528,6 +2531,10 @@ packages:
 
   linkify-it@5.0.0:
     resolution: {integrity: sha512-5aHCbzQRADcdP+ATqnDuhhJ/MRIqDkZX5pyjFHRRysS8vZ5AbqGEoFIb6pYHPZ+L/OC2Lc+xT8uHVVR5CAK/wQ==}
+
+  live2d-lib@1.0.9:
+    resolution: {integrity: sha512-VBk3snstjEgDZv8/WPE+VELJapBFgC7TYCFb09D4WjCsdd30yCdaFPHi98utlK+hImgSvdjqdE5pwxqLn0B3Jg==}
+    hasBin: true
 
   load-json-file@4.0.0:
     resolution: {integrity: sha512-Kx8hMakjX03tiGTLAIdJ+lL0htKnXjEZN6hk/tozf/WOuYGdZBJrZ+rCJRbVCugsjB3jMLn9746NsQIf5VjBMw==}
@@ -6468,6 +6475,11 @@ snapshots:
   linkify-it@5.0.0:
     dependencies:
       uc.micro: 2.1.0
+
+  live2d-lib@1.0.9:
+    dependencies:
+      chalk: 4.1.2
+      mkdirp: 3.0.1
 
   load-json-file@4.0.0:
     dependencies:
